@@ -1,0 +1,171 @@
+//const input = prompt("Введіть число:"); 
+//const number = parseInt(input); 
+
+//if (isNaN(number)) { 
+//  console.log("Помилка: Введений рядок не є числом.");
+//} else {
+//  if (number % 2 === 0) { 
+//    console.log("Введене число є парним.");
+//  } else {
+//    console.log("Введене число є непарним.");
+//  }
+//}
+
+
+
+// const badWords = ["поганий", "нецензурний", "образливий"]; 
+// const input = prompt("Введіть текст:"); 
+// let hasBadWords = false; 
+// for (let i = 0; i < badWords.length; i++) { 
+//   if (input.indexOf(badWords[i]) !== -1) { 
+//     hasBadWords = true;
+//     break; 
+//   }
+// }
+// if (hasBadWords) { 
+//   console.log("У тексті є некоректні слова.");
+// } else { 
+//   console.log("Текст є коректним.");
+// }
+
+
+// let answer = confirm("Так чи ні?"); // питання №1
+// if (answer) {
+//   console.log("Користувач відповів 'так' на питання №1");
+// } else {
+//   console.log("Користувач відповів 'ні' на питання №1");
+// }
+
+
+// let answer = confirm("Так чи ні?"); // питання №1
+// if (answer) {
+//   console.log("Користувач відповів 'так' на питання №1");
+// } else {
+//   console.log("Користувач відповів 'ні' на питання №1");
+// }
+
+
+
+// let size = prompt("Вкажіть ваш розмір одягу");
+// let italianSize = "";
+// if (size === "XS") {
+//   italianSize = "40";
+// } else if (size === "S") {
+//   italianSize = "42";
+// } else if (size === "M") {
+//   italianSize = "44";
+// } else if (size === "L") {
+//   italianSize = "46";
+// } else if (size === "XL") {
+//   italianSize = "48";
+// } else if (size === "XXL") {
+//   italianSize = "50";
+// } else {
+//   italianSize = "Розмір не знайдено";
+// }
+// let isSizeFound = (italianSize !== "Розмір не знайдено");
+// alert(`Розмір одягу ${size} в італійській розмірній сітці - ${isSizeFound ? italianSize : "Розмір не знайдено"}`);
+
+
+
+// const message = confirm('Ви чоловік?') ? "Ви чоловік" : "Ви жінка"
+// alert (message)
+
+
+
+// const input = prompt("Введіть число:"); 
+// const number = parseInt(input); 
+// console.log(input > 0 || number > 0);
+
+
+// let shopping = confirm("Шопінг?") || alert("Ти - бяка!");
+
+
+// let shopping = confirm("Шопінг?");
+// if (shopping){
+//     alert("Погнали!")
+// } else {
+//     alert("Ти - бяка!")
+// }
+
+
+
+// let firstname = prompt("Вкажіть ваше імʼя") || "Іван"
+// let lastname = prompt("Вкажіть ваше прізвище") || "Іванов"
+// let surname = prompt("Вкажіть як вас по батькові") || "Іванович"
+
+
+// let firstName = prompt("Введіть ваше ім'я:");
+// if (firstName === null || firstName === "") {
+//   firstName = "Іван";
+// }
+
+// let lastName = prompt("Введіть ваше прізвище:");
+// if (lastName === null || lastName === "") {
+//   lastName = "Іванов";
+// }
+
+// let middleName = prompt("Введіть ваше по-батькові:");
+// if (middleName === null || middleName === "") {
+//   middleName = "Іванович";
+// }
+
+
+
+
+
+// let login = prompt("Введіть ваш логін:", "");
+
+// if (login == "admin") {
+//   let password = prompt("Введіть ваш пароль:", "");
+
+//   if (password == "qwerty") {
+//     alert("Ласкаво просимо!");
+//   } else {
+//     alert("Помилка: невірний пароль!");
+//   }
+// } else {
+//   alert("Помилка: невірний логін!");
+// }
+
+
+
+// let currency = prompt("Введіть назву валюти (наприклад, USD або EUR)").toUpperCase();
+// let isBuying = confirm("Ви хочете купити цю валюту?");
+// let rate;
+// if (currency === "USD") {
+//   rate = isBuying ? 27.5 : 27.0;
+// } else if (currency === "EUR") {
+//   rate = isBuying ? 32.5 : 31.8;
+// } else {
+//   alert("На жаль, ми не обмінюємо цю валюту");
+// }
+// if (rate) {
+//   let amount = prompt("Введіть суму для обміну");
+//   let result = isBuying ? amount / rate : amount * rate;
+//   alert(`Ви отримаєте ${result.toFixed(2)} гривень`);
+// }
+
+
+
+// var userChoice = prompt("Камінь, ножиці, або папір?");
+// userChoice = userChoice.toLowerCase();
+// var computerChoice = Math.floor(Math.random() * 3);
+// if (computerChoice === 0) {
+//     computerChoice = "камінь";
+// } else if (computerChoice === 1) {
+//     computerChoice = "ножиці";
+// } else {
+//     computerChoice = "папір";
+// }
+// alert("Комп'ютер вибрав: " + computerChoice);
+// if (userChoice === "камінь" && computerChoice === "ножиці" ||
+//     userChoice === "ножиці" && computerChoice === "папір" ||
+//     userChoice === "папір" && computerChoice === "камінь") {
+//     alert("Ви перемогли!");
+// } else if (userChoice === computerChoice) {
+//     alert("Нічия!");
+// } else {
+//     alert("Комп'ютер переміг!");
+// }
+
